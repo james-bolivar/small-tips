@@ -1,0 +1,9 @@
+In script grant admin rights:
+
+osascript -e 'display dialog "Local administrator rights granted for '$periodMinutes' minutes" buttons {"Ok"} default button 1'
+
+changed to 
+
+osascript -e 'display dialog "Local administrator rights granted for '$periodMinutes' minutes" buttons {"Ok"} default button 1 giving up after 1.5'
+
+added timeout
